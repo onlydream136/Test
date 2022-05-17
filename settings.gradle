@@ -1,0 +1,23 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+        maven {
+            url uri("${rootProject.projectDir}/repo")
+        }
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven {
+            url uri("${rootProject.projectDir}/repo")
+        }
+    }
+}
+rootProject.name = "MAVEN"
+include ':app'
+include ':mylibrary'
