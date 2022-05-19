@@ -3,6 +3,8 @@ plugins {
     id 'org.jetbrains.kotlin.android'
     id 'maven-publish'
 }
+group = 'com.xiaoxing.test'
+version = '1.2'
 
 afterEvaluate {
     publishing {
@@ -15,7 +17,7 @@ afterEvaluate {
                 // You can then customize attributes of the publication as shown below.
                 groupId = 'com.xiaoxing.test'
                 artifactId = 'chen'
-                version = '1.0'
+                version = '1.2.0'
             }
             // Creates a Maven publication called “debug”.
             debug(MavenPublication) {
